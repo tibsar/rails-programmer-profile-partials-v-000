@@ -16,13 +16,7 @@
     <%= render :partial => 'attribute', :locals => {:label => "Quote:", :value => @programmer.quote} %>
     <%= render :partial => 'attribute', :locals => {:label => "Claim to Fame:", :value => @programmer.claim_to_fame} %>
 
-
-
-    <p>
-    <strong>Claim To Fame:</strong> <%= @programmer.claim_to_fame %>
-    </p>
-
-    <p>
+  <p>
     <%= link_to "Learn more about #{@programmer.name}", @programmer.wikipedia_page, target: '_blank' %>
     </p>
 
